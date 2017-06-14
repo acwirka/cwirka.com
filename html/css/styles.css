@@ -2,17 +2,25 @@ body {
     background-color: #364958;
     color: #f2f6ff;
     font-family: 'Playfair Display', serif;
+    
 }
-h2 {
+
+#page {
+    position: relative;
+    overflow: hidden;
+}
+h2, h3 {
     font-family: 'Josefin Sans', sans-serif;
 }
 
 nav {
-    text-align: center;
+    text-align: right;
     width: 100%;
-    background-color: #1c262e;
+    background-color: rgba(28, 38, 46, 0);
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
+    position: fixed;
+    transition: background-color .5s;
 }
 nav ul li {
     display: inline-block;
@@ -20,35 +28,49 @@ nav ul li {
     
 }
 nav > ul > li > a {
+    
     color: #dedede;
     display: block;
-    line-height: 3.2em;
-    padding-top: 10%;
+    line-height: 1.1em;
+    padding-top: 22%;
     padding-left: .52em;
     padding-right: .52em;
     margin: 0;
     text-decoration: none;
-    font-size: 2.25em;
-    transition: color 1s, transform .5s;
+    font-size: 1.65em;
+    transition: transform .5s;
     transition-timing-function: ease-out;
 }
 nav > ul > li > a:hover {
     color: rgba(177, 148, 51, 0.9);
-/*    font-size-adjust: 130%;*/
-    transform: scale(1.4);
+    transform: scale(1.2);
+}
+#navLogo {
+    font-size: 3.3em;
+    padding-left: 2%;
+    padding-top: 1%;
+    transition: transform .5s;
 }
 
-
-.divider {
-/*    position: relative;*/
-    width: 100%;
+#img1 > img {
     max-width: 100%;
-    background-image: url(barcircle_03.png);
+    height: auto;
+    position: absolute;
+    opacity: .15;
+    z-index: -1;
+}
+
+.blend {
+    background-color: rgba(28, 38, 46, .85);
+    z-index: 1;
     
-    background-repeat: no-repeat;
-/*  max-width: 960px;*/
-  margin: 0 auto;
-/*  padding: 0 20px;*/
-/*    width: 80%;*/
-/*    margin: auto;*/
+}
+.shrink {
+    transform: scale(.95) translateX(10px);
+}
+.logo {
+    margin-top: 30%;
+}
+.mainBox {
+    height: 800px;
 }
