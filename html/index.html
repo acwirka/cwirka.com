@@ -16,67 +16,125 @@
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
  
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Bellefair" rel="stylesheet">
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/styles.css">
 
-
+  
+  
 
 </head>
 <body>
 
-<div id="page">
-    
-    <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div id="img1"><img src="images/galway.jpg"></div>
-     <nav id="topbar">
-        
-            <div id="navLogo" style="float: left">Cwirka</div>
-            
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="blog.html">Resume</a></li>
-            <li><a href="news.html">Contact</a></li>
-        </ul>
-         
-    </nav>
-  <div class="container">
-    <div class="row">
-      <div class="logo">
-<!--        <img src="images/Cwirka_03.png">-->
-          <h2>Hello...</h2>
-          <h3>my name is Drew and I'm a Web Developer</h3>
-          
-        <p></p>
-      </div>
-    </div>
-  </div>
-    
-<!-- .container is main centered wrapper -->
-
-  
-    
-   
-    
-    <div class="container">
-        
-  <!-- columns should be the immediate child of a .row -->
-  <div class="row mainBox">
-   
-  </div>
-
-  
-
-</div>
-                
+    <div id="header">
+        <img src="images/beachBg.jpg">
+             <div class="row">
+                <div class="twelve columns">
+                    <div id="topbar">
+                        <div id="navLogo" style="float: left">
+                            <a href="home.html">Cwirka</a>
+                        </div>
+                        <ul id="navLinks">
+                            <li><a  href="index.html">Home</a></li>
+                            <li><a  href="resume.html">Resume</a></li>
+                            <li><a  href="contact.html">Contact</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        <div id="headerOverlay">
+                <div id="logo">
+                    <h2 id="logoh1">Hello... </h2>
+                    <h3 id="logoh2">my name is Drew and I'm a Web Developer</h3>
+                </div>
+        </div>
     </div>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="js/script.js"></script>
+    <div class="mainBox">
+        <div class="row cta">
+            <div class="three columns"><img src="images/layer1small.png"></div>
+            <div class="nine columns"><p>Welcome to my page.  I am a recent Computer Science graduate living in Southern California.  I enjoy the creative aspect of designing a site as well as the problem solving and programming required in its development. Have a look around to see what kind of projects I have worked on, what I'm currently up to, and how to reach me.    
+            </p></div>
+            </div>
+    </div>
+    <div class="mainBox">
+        <h3>Here are some sites I've built:</h3><br>
+            <div id="sites1">
+                <a href="http://www.shelbycollette.com">
+                    <img src="images/shelbyScreen.jpg">
+                </a>
+            </div>
+            <div id="sites2">
+                <a href="http://www.courtneyslocks.com">
+                    <img src="images/clScreen.jpg">
+                </a>
+            </div>
+    </div>
+
+
+    <div class="cta ctaEnd">
+        <p>For more of my work please check out my <a href="resume.html">Resume</a>
+         or go ahead and <a href="mailto:drew@cwirka.com">contact me</a></p>
+    </div>
+    
+    <div class="footer">
+        <footer class="row">
+
+			<div class="six columns">
+
+				<h3>Cwirka <span>Web Development</span></h3>
+
+				<p class="footer-links">
+					<a href="#">Home</a>
+					·
+					<a href="#">About</a>
+					·
+					<a href="#">Resume</a>
+					·
+					<a href="#">Contact</a>
+					
+				</p>
+
+				<p class="footer-company-name">Andrew Cwirka &copy; 2017</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+			<div class="three columns">
+
+				<h3>Contact Me</h3>
+                <p><h3><a href="mailto:drew@cwirka.com">drew@cwirka.com</a></h3></p>
+            </div>
+            <div class="three columns">
+                <form action="#" method="post">
+
+					<input type="text" name="email" placeholder="Email" />
+					<textarea name="message" placeholder="Message"></textarea>
+					<button>Send</button>
+
+				</form>
+            </div>
+			
+
+		</footer>
+    </div>
+
+    
+    <script type="text/javascript" src="js/lib/noframework.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    
 </body>
 </html>
